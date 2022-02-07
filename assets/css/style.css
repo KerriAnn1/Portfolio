@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+  text-align: right;
+  background: #5e4085 ;
+  color: whitesmoke;
+  text-align: left;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+nav {
+  display: flex;
+  background-color:#82638d  ;
+  justify-content: right;
+  
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: right;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1;
+  background-color: #FD7272;
+  padding: 80px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container > div {
+  font-size: 40px;
+  margin: 60px;
+  text-decoration-line: underline;
+}
+
+
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #82638d  ;
+  color: #fff;
+}
+
+
+.products {
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 5px;
+  flex: 5 0 400px;
+}
+
+.card header {
+  padding: 10px;
+}
+
+.card a {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
